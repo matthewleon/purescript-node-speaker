@@ -27,9 +27,8 @@ mkSpeaker'
 mkSpeaker' = mkSpeakerWithOptions
 
 foreign import mkSpeakerWithOptions
-  :: forall eff r r'
-   . Union r r' SpeakerOptions
-  => Record r
+  :: forall eff r
+   . Record r
   -> Speaker eff
 
 type SpeakerOptions = (

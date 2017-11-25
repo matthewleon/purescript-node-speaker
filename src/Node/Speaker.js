@@ -6,10 +6,8 @@ exports.mkSpeaker = function() {
   return new Speaker();
 };
 
-exports.mkSpeakerWithOptions = function() {
-  return function(opts) {
-    return new Speaker(opts);
-  };
+exports.mkSpeakerWithOptions = function(opts) {
+  return new Speaker(opts);
 };
 
 exports.onOpen = function(speaker) {
