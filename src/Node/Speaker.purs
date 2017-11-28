@@ -1,9 +1,11 @@
 module Node.Speaker (
   Speaker
 , SPEAKER
-, mkSpeaker
-, mkSpeaker'
 , SpeakerOptions
+, newSpeaker
+, newSpeaker'
+, onOpen
+, onFlush
 , module Node.Stream
 ) where
 
@@ -16,17 +18,17 @@ foreign import data SPEAKER :: Effect
 
 type Speaker eff = Writable () (speaker :: SPEAKER | eff)
 
-foreign import mkSpeaker :: forall eff. Speaker eff
+foreign import newSpeaker :: forall eff. Speaker eff
 
 -- TODO: Either
-mkSpeaker'
+newSpeaker'
   :: forall eff r r'
    . Union r r' SpeakerOptions
   => Record r
   -> Speaker eff
-mkSpeaker' = mkSpeakerWithOptions
+newSpeaker' = newSpeakerWithOptions
 
-foreign import mkSpeakerWithOptions
+foreign import newSpeakerWithOptions
   :: forall eff r
    . Record r
   -> Speaker eff

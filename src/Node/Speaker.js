@@ -2,11 +2,11 @@
 
 var Speaker = require('speaker');
 
-exports.mkSpeaker = function() {
+exports.newSpeaker = function() {
   return new Speaker();
 };
 
-exports.mkSpeakerWithOptions = function(opts) {
+exports.newSpeakerWithOptions = function(opts) {
   return new Speaker(opts);
 };
 
