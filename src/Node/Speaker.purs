@@ -43,7 +43,6 @@ type SpeakerOptions = (
 , samplesPerFrame :: Int
 )
 
-
 foreign import onOpen
   :: forall eff. Speaker eff -> Eff eff Unit -> Eff eff Unit
 

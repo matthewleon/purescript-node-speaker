@@ -13,6 +13,12 @@
   },
   "devDependencies": {
     "purescript-console": "^3.0.0",
-    "purescript-psci-support": "^3.0.0"
+    "purescript-arraybuffer-safe": "matthewleon/purescript-arraybuffer-safe",
+    "purescript-psci-support": "^3.0.0",
+    "purescript-integers": "^3.2.0",
+    "purescript-node-buffer": "matthewleon/purescript-node-buffer#fromArrayBuffer"
+  },
+  "resolutions": {
+    "purescript-node-buffer": "fromArrayBuffer"
   }
 }
