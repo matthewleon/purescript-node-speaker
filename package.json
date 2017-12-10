@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "clean": "rimraf output && rimraf .pulp-cache",
-    "examples:build": "pulp build -I example -- --censor-lib --strict",
+    "examples:build": "pulp build -I examples -- --censor-lib --strict",
     "example": "pulp run -I examples -m Sin",
     "build": "pulp build && pulp test -- -w hello -w world"
   },

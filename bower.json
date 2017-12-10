@@ -16,7 +16,9 @@
     "purescript-arraybuffer-safe": "matthewleon/purescript-arraybuffer-safe",
     "purescript-psci-support": "^3.0.0",
     "purescript-integers": "^3.2.0",
-    "purescript-node-buffer": "matthewleon/purescript-node-buffer#fromArrayBuffer"
+    "purescript-node-buffer": "matthewleon/purescript-node-buffer#fromArrayBuffer",
+    "purescript-node-readable": "^2.1.0",
+    "purescript-lists": "^4.12.0"
   },
   "resolutions": {
     "purescript-node-buffer": "fromArrayBuffer"
